@@ -23,6 +23,6 @@ public class HomePage extends PageBase {
 
     public void deleteCar(int stockNumber) {
         By deleteButton = By.cssSelector("a[href='/delete/"+stockNumber+"']");
-        Driver.getDriver().findElement(deleteButton).click();
+        seleniumUtil.click(deleteButton);
     }
 }

@@ -40,7 +40,7 @@ public class AddCarPage extends PageBase {
     }
 
     public void selectMake(String make) {
-        WebElement selectEl = Driver.getDriver().findElement(makeSelect);
+        WebElement selectEl = seleniumUtil.findElement(makeSelect);
         Select makeSelect = new Select(selectEl);
         switch (make.toLowerCase()) {
             case "audi": makeSelect.selectByVisibleText("Audi"); break;
