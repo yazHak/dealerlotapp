@@ -24,19 +24,19 @@ public class AddCarPage extends PageBase {
         seleniumUtil.sendKeys(yearInput,year+"");
     }
     public void enterModel(String model) {
-        Driver.getDriver().findElement(modelInput).sendKeys(model);
+        seleniumUtil.sendKeys(modelInput,model);
     }
 
     public void enterColor(String color) {
-        Driver.getDriver().findElement(colorInput).sendKeys(color);
+        seleniumUtil.sendKeys(colorInput,color);
     }
 
     public void enterStock(int Stock) {
-        Driver.getDriver().findElement(stockInput).sendKeys(Stock+"");
+        seleniumUtil.sendKeys(stockInput,Stock+"");
     }
 
     public void enterImage(String image) {
-        Driver.getDriver().findElement(imageInput).sendKeys(image);
+        seleniumUtil.sendKeys(imageInput,image);
     }
 
     public void selectMake(String make) {
